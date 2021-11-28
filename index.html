@@ -45,7 +45,7 @@
               onclick="val(mul.value)"
             />
           </div>
-          <div class="row">
+          <div class="row" style="position: relative">
             <input type="button" value="0" name="v0" onclick="val(v0.value)" />
             <input
               type="button"
@@ -60,12 +60,24 @@
               onclick="val(vdiv.value)"
             />
             <input
+              style="height: 120px"
+              aria-rowspan="2"
               type="button"
               title="Click 2 vezes para limpar"
               value="="
               name="veql"
               onclick="calculate()"
             />
+          </div>
+          <div class="row" style="position: absolute; margin-top: -64px">
+            <input
+              style="width: 124px"
+              type="button"
+              value="C"
+              name="clean"
+              onclick="clean()"
+            />
+            <input type="button" value="<" name="back" onclick="back()" />
           </div>
         </div>
       </form>
